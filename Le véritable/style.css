@@ -1,0 +1,781 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+:root{
+	--background: #FCFCFC;
+	--background-carte: #EFEFEF;
+	--background-contact: #FCFCFC;
+	
+	--color_h1: #282828;
+	--color: #282828;
+	--color-hover: #3500D3;
+
+	--block: block;
+	--none: none;
+
+	--tableau1: #3365BD;
+	--tableau2: #8BA3CD;
+	--tableau3: #EDF1F6;
+}
+
+/* Reset de CSS */
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0; padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	outline: none; border: none;
+	transition: all .2s linear;
+}
+
+html{
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body{
+	background: var(--background);
+	padding-top: 8em;
+}
+
+section{
+	padding: 0 12% 50px 12%;
+	min-height: calc(100vh - 8em);
+}
+
+h1{
+	font-size: 7em;
+	text-transform: ;
+	font-weight: bold;
+	color: var(--color_h1);
+}
+
+h3{
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 1em 0 .5em 0;
+	color: var(--color_h1);
+}
+
+h4{
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 1em 0 .5em 0;
+	color: var(--color_h1);
+}
+
+p{
+	font-size: 2.5em;
+	color: var(--color_h1);
+	margin: .7em 0;
+}
+
+span{
+	color: var(--color-hover);
+}
+
+.aaa{
+	color: var(--background-carte);
+}
+
+
+
+/* ---------- bouton pour aller en haut debut debut ---------- */
+
+#scrollUp{
+	position: fixed;
+	bottom : 1.5em;
+	right: 2em;
+	opacity: 0;
+}
+
+#scrollUp a{
+	padding: 0.2em 0.6em;
+	font-size: 2.9em;
+	color: var(--background);
+	background: var(--color);
+	text-align: center;
+	border-radius: 15px;
+}
+
+#scrollUp a:hover{
+	
+}
+
+
+/* ---------- bouton pour aller en haut debut fin ---------- */
+
+/* ---------- header debut ---------- */
+
+/* Disposition de la navbar + dimention + ombre + disposition du contenu */
+header{
+	position: fixed;
+	top: 0; 
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 7rem;
+	background: transparent;
+	padding: 5em 12%;
+	box-shadow: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Taille logo */
+header .logo img{
+	height: 6.5em;
+}
+
+
+/* disposition de la liste ul et li*/
+header .navbar ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .navbar ul li{
+	margin-left: 3em;
+}
+
+/* Taille et couleur du texte de la liste */
+header .navbar ul li a{
+	font-size: 2.5em;
+	color: var(--color);
+}
+
+/* Changement de couleur au passge du curseur */
+header .navbar ul li a.ici,
+header .navbar ul li a:hover,
+header .dark-mode:hover{
+	color: var(--color-hover);
+}
+
+/* Taille et couleur de l'icon lune et soleil */
+header .dark-mode{
+	font-size: 4em;
+	color: var(--color);
+	cursor: pointer;
+}
+
+/* Pour afficher l'icon lune */
+header .img-noir{
+	display: var(--block);
+}
+
+/* Pour faire disparaitre l'icon soleil */
+header .img-blanc{
+	display: var(--none);
+}
+
+/* boutton responsive */
+header #menu-bar{
+	font-size: 4em;
+	color: var(--color);
+	cursor: pointer;
+	display: none;
+}
+
+/* ---------- header fin ---------- */
+
+
+/* ---------- footer debut ---------- */
+
+/* disposition du footer */
+footer{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+/* dispostion de "debut" */
+footer .debut{
+	min-height: 400px;
+	padding: 0 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: var(--background-carte);
+}
+
+footer .debut p{
+	text-align: center;
+}
+
+footer .debut ul{
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .debut ul li{
+	padding: 0 1.2em;
+}
+
+footer .debut ul li a{
+	font-size: 4em;
+	color: var(--color);
+}
+
+footer .debut ul li a:hover{
+	color: var(--color-hover);
+}
+
+footer .fin{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .fin p{
+	font-weight: bold;
+}
+
+footer p span{
+	color: var(--color-hover);
+}
+
+
+/* ---------- footer fin ---------- */
+
+/* -------------------- Page accueil debut -------------------- */
+/* ---------- presentation debut ---------- */
+
+.présentation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.présentation .images{
+
+}
+
+.videoyt{
+	padding: 5em 12%;
+	background: var(--background-carte);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.pourqui h4 a{
+	color: var(--color);
+}
+
+.pourqui h4 a:hover{
+	text-decoration: underline;
+}
+
+/* ---------- presentation fin ---------- */
+
+/* ---------- Horraire debut ---------- */
+
+.horraires-sti{
+	padding: 0 12% 10em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.horraires-sti h4{
+	padding-bottom: .5em;
+}
+
+table{
+	width: 80%;
+	border-collapse: collapse;
+	margin-bottom: 5em;
+}
+
+table th, table td{
+	font-size: 1.7em;
+	padding: 1em 2em;
+	text-align: center;
+}
+
+table th{
+	background-color: var(--tableau1);
+	color: #fcfcfc;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+table tbody tr:nth-child(odd){
+	background-color: var(--tableau2);
+}
+
+table tbody tr:nth-child(even){
+	background-color: var(--tableau3);
+}
+
+.coin1{
+	border-radius: 20px 0 0 0;
+}
+
+.coin2{
+	border-radius: 0 20px 0 0;
+}
+
+.coin3{
+	border-radius: 0 0 0 20px;
+}
+
+.coin4{
+	border-radius: 0 0 20px 0;
+}
+
+/* ---------- Horraire fin ---------- */
+/* -------------------- Page accueil fin -------------------- */
+
+
+
+/* -------------------- Spécialités debut -------------------- */
+/* ---------- vidéo debut ---------- */
+
+.video{
+	
+}
+
+.video video{
+	z-index: -100;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.video h1{
+	padding-top: 2.5em;
+	color: #FCFCFC;
+}
+
+/* ---------- vidéo fin ---------- */
+
+/* ---------- specialites debut ---------- */
+
+/* Réduire toute la boites */
+.specialites{
+	font-size: 80%;
+	padding-bottom: 300px;
+}
+
+/* titre centré */
+.specialites h3{
+	text-align: center;
+}
+
+/* permet d'avoir la scroll barre */
+.specialites .carte{
+	display: flex;
+	overflow-x: auto;
+	width: 100%;
+}
+
+/* arrière plan, dimention, bordure et couleur et position du texte */
+.specialites .carte .boite{
+	background: var(--background-carte);
+	padding: 4em 7em;
+	margin: 2em;
+	min-width: 70em;
+	max-height: 900em;
+	border-radius: 40px;
+}
+
+.specialites .carte .boite .boite-logo{
+	font-size: 10em;
+	text-align: center;
+	color: var(--color);
+}
+
+.specialites .carte .boite h4{
+	text-align: center;
+}
+
+
+/* ---------- specialites fin ---------- */
+/* -------------------- Spécialités fin -------------------- */
+
+/* -------------------- LSSN debut -------------------- */
+/* ---------- lssn debut ---------- */
+
+.lssn{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.galerie{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 70px auto 0;
+}
+
+.item{
+	width: 600px;
+	height: ;
+	margin: 20px;
+}
+
+.item img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+/* ---------- lssn fin ---------- */
+
+
+
+/* ---------- date debut ---------- */
+
+.date h4{
+	padding-top: 4em;
+}
+
+.date .navbar-date{
+	position: fixed;
+	top: 30%; left: -100px;
+	z-index: 1000;
+	background: var(--background-carte);
+	padding: 2em;
+	border-radius: 0 10px 10px 0;
+}
+
+.date .navbar-date ul{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.date .navbar-date li{
+	display: flex;
+}
+
+.date .navbar-date li a{
+	font-size: 2em;
+	color: var(--color);
+}
+
+.date .navbar-date li a:hover{
+	color: var(--color-hover);
+	text-decoration: underline;
+}
+
+/* ---------- date fin ---------- */
+/* -------------------- LSSN fin -------------------- */
+
+/* -------------------- Projet debut -------------------- */
+
+
+details, summary{
+    display: flex;
+    justify-content: space-between;
+}
+
+details{
+    background: var(--background-carte);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 100px auto 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+summary{
+    user-select: none;
+    padding: 25px;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color);
+}
+
+summary .plus{
+    display: block;
+}
+
+summary .moins{
+    display: none;
+}
+
+details p{
+    line-height: 1.5;
+    padding: 2em;
+    cursor: auto;
+}
+
+details img{
+    width: 100%;
+    padding: 5em;
+}
+
+/* Pour chenger le plus en moins */
+details[open] summary .plus{
+    display: none;
+}
+
+details[open] summary .moins{
+    display: block;
+}
+
+
+/* -------------------- Projet fin -------------------- */
+
+/* -------------------- nous contacter debut -------------------- */
+
+.connection{
+	padding-top: 5em;
+}
+
+.connection .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.connection .container .request_message{
+	text-transform: uppercase;
+	background-color: var(--background);
+	text-align: center;
+	font-size: 2em;
+	padding: 1em 5em;
+	margin-bottom: 1em;
+	border-radius: 20px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+	animation: anime 0.5s ease-out;
+}
+
+/* animation */
+
+@keyframes anime{
+	from{
+		transform: translateY(-70px);
+	}
+}
+
+.connection .container form{
+	background-color: var(--background-carte);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+	width: 70%;
+	padding: 20px;
+}
+
+form h4{
+	text-align: center;
+}
+
+label{
+	color: var(--color);
+	font-size: 2em;
+	margin: .2em 0;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+input, textarea{
+	background: var(--background-contact);
+	padding: 1em;
+	resize: none;
+	outline: 0;
+	border: 1px solid var(--tableau2);
+	border-radius: 10px;
+}
+
+button{
+	background-color: var(--color-hover);
+	color: white;
+	font-size: 2em;
+	border: 0;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding: 1em 0;
+	transition: 0.5s;
+}
+
+button:hover{
+	opacity: 0.8;
+}
+
+.envoyé{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* -------------------- nous contacter fin -------------------- */
+
+/* -------------------- Inscription/Connection debut -------------------- */
+
+/* Inscription debut */
+
+.connexion{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.connexion form{
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background-carte);
+	padding: 0 10em 5em;
+	border-radius: 10px;
+}
+
+.connexion form .btn-connec{
+	margin-top: 2em;
+	background-color: var(--color-hover);
+	color: var(--background);
+	cursor: pointer;
+}
+
+.connexion form .btn-connec:hover{
+	opacity: 0.8;
+}
+
+/* Inscription fin */
+
+/* -------------------- Inscription/Connection fin -------------------- */
+
+
+/* -------------------- media queries -------------------- */
+@media (max-width: 1491px){
+	html{
+		font-size: 55%;
+	}
+
+	.videoyt iframe{
+		height: 252px;
+		width: 448px;
+	}
+
+	table{
+	width: 100%;
+	}
+}
+
+@media (max-width: 1291px){
+	html{
+		font-size: 50%;
+	}
+
+	.videoyt iframe{
+		height: 226px;
+		width: 403px;
+	}
+
+	.video video{
+	width: auto;
+}
+
+
+}
+
+@media (max-width: 1150px){
+	html{
+		font-size: 45%;
+	}
+
+	.videoyt iframe{
+		height: 181px;
+		width: 322px;
+	}
+}
+
+
+@media (max-width: 910px){
+
+	/* menu-burger debut */
+
+	header #menu-bar{
+		display: block;
+	}
+
+	header .navbar{
+		position: fixed;
+		top: 10rem; left: 0;
+		width: 100%;
+		transform: scaleY(0);
+		transform-origin: top;
+		background: var(--background);
+		opacity: 1;
+		box-shadow: 0 .8em 1em rgba(0, 0, 0, .1);
+	}
+
+	header .navbar ul{
+		flex-flow: column;
+		padding: 2rem 3rem;
+	}
+
+	header .navbar ul li{
+		margin: 1.5rem;
+		width: 100%;
+	}
+
+	header .navbar ul li a{
+		display: block;
+		color: var(--color);
+		padding-left: 10%;
+		font-size: 4rem;
+	}
+
+	header .navbar ul li a:hover,
+	header .navbar ul li a.ici{
+		color: var(--color-hover);
+	}
+
+	.fa-times{
+		transform: rotate(180deg);
+	}
+
+	header .navbar.nav-toggle{
+		transform: scaleY(1);
+		opacity: 1;
+	}
+
+	/* menu-burger fin */
+
+	footer ul{
+	flex-wrap: wrap;
+	}
+
+	footer ul li{
+	margin: auto 1rem;
+	}
+
+	footer p{
+		text-align: center;
+	}
+
+	.videoyt{
+		flex-direction: column;
+	}
+
+	.videoyt h3{
+		padding: 0 0 1em 0;
+	}
+}
